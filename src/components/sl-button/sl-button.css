@@ -1,0 +1,127 @@
+:host {
+  display: inline-block;
+}
+
+:host([full-width]) {
+  display: block;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: var(--sl-font-weight-medium);
+  line-height: var(--sl-line-height-normal);
+  border: none;
+  cursor: pointer;
+  transition: all var(--sl-transition-fast);
+  text-decoration: none;
+  user-select: none;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+/* Sizes */
+.button--small {
+  font-size: var(--sl-font-size-sm);
+  padding: var(--sl-spacing-xs) var(--sl-spacing-md);
+  border-radius: var(--sl-border-radius-sm);
+  min-height: 2rem;
+}
+
+.button--medium {
+  font-size: var(--sl-font-size-md);
+  padding: var(--sl-spacing-sm) var(--sl-spacing-lg);
+  border-radius: var(--sl-border-radius-md);
+  min-height: 2.5rem;
+}
+
+.button--large {
+  font-size: var(--sl-font-size-lg);
+  padding: var(--sl-spacing-md) var(--sl-spacing-xl);
+  border-radius: var(--sl-border-radius-lg);
+  min-height: 3rem;
+}
+
+/* Variants */
+.button--primary {
+  background-color: var(--sl-color-primary);
+  color: var(--sl-color-text-inverse);
+}
+
+.button--primary:hover:not(.button--disabled) {
+  background-color: var(--sl-color-primary-hover);
+}
+
+.button--primary:active:not(.button--disabled) {
+  background-color: var(--sl-color-primary-active);
+}
+
+.button--secondary {
+  background-color: var(--sl-color-secondary);
+  color: var(--sl-color-text-inverse);
+}
+
+.button--secondary:hover:not(.button--disabled) {
+  background-color: var(--sl-color-secondary-hover);
+}
+
+.button--secondary:active:not(.button--disabled) {
+  background-color: var(--sl-color-secondary-active);
+}
+
+.button--success {
+  background-color: var(--sl-color-success);
+  color: var(--sl-color-text-inverse);
+}
+
+.button--success:hover:not(.button--disabled) {
+  background-color: var(--sl-color-success-hover);
+}
+
+.button--success:active:not(.button--disabled) {
+  background-color: var(--sl-color-success-active);
+}
+
+.button--warning {
+  background-color: var(--sl-color-warning);
+  color: var(--sl-color-text-inverse);
+}
+
+.button--warning:hover:not(.button--disabled) {
+  background-color: var(--sl-color-warning-hover);
+}
+
+.button--warning:active:not(.button--disabled) {
+  background-color: var(--sl-color-warning-active);
+}
+
+.button--danger {
+  background-color: var(--sl-color-danger);
+  color: var(--sl-color-text-inverse);
+}
+
+.button--danger:hover:not(.button--disabled) {
+  background-color: var(--sl-color-danger-hover);
+}
+
+.button--danger:active:not(.button--disabled) {
+  background-color: var(--sl-color-danger-active);
+}
+
+/* States */
+.button--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button:focus-visible {
+  outline: none;
+  box-shadow: var(--sl-focus-ring);
+}
+
+/* Full width */
+.button--full-width {
+  width: 100%;
+}

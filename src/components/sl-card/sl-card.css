@@ -1,0 +1,75 @@
+:host {
+  display: block;
+}
+
+.card {
+  background-color: var(--sl-color-background);
+  border: 1px solid var(--sl-color-border);
+  border-radius: var(--sl-border-radius-lg);
+  overflow: hidden;
+  transition: all var(--sl-transition-medium);
+}
+
+/* Elevations */
+.card--elevation-none {
+  box-shadow: none;
+}
+
+.card--elevation-sm {
+  box-shadow: var(--sl-shadow-sm);
+}
+
+.card--elevation-md {
+  box-shadow: var(--sl-shadow-md);
+}
+
+.card--elevation-lg {
+  box-shadow: var(--sl-shadow-lg);
+}
+
+.card--elevation-xl {
+  box-shadow: var(--sl-shadow-xl);
+}
+
+/* Interactive state */
+.card--interactive {
+  cursor: pointer;
+}
+
+.card--interactive:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--sl-shadow-lg);
+}
+
+.card--interactive:focus-visible {
+  outline: none;
+  box-shadow: var(--sl-focus-ring), var(--sl-shadow-lg);
+}
+
+/* Card sections */
+.card__header {
+  padding: var(--sl-spacing-lg);
+  border-bottom: 1px solid var(--sl-color-border);
+}
+
+.card__header:empty {
+  display: none;
+}
+
+.card__body {
+  padding: var(--sl-spacing-lg);
+}
+
+.card__body:empty {
+  display: none;
+}
+
+.card__footer {
+  padding: var(--sl-spacing-lg);
+  border-top: 1px solid var(--sl-color-border);
+  background-color: var(--sl-color-surface);
+}
+
+.card__footer:empty {
+  display: none;
+}
