@@ -1,0 +1,108 @@
+:host {
+  /* Primary Colors */
+  --sl-color-primary: #0070f3;
+  --sl-color-primary-hover: #0051cc;
+  --sl-color-primary-active: #003d99;
+  
+  /* Secondary Colors */
+  --sl-color-secondary: #666666;
+  --sl-color-secondary-hover: #555555;
+  --sl-color-secondary-active: #444444;
+  
+  /* Success Colors */
+  --sl-color-success: #10b981;
+  --sl-color-success-hover: #059669;
+  --sl-color-success-active: #047857;
+  
+  /* Warning Colors */
+  --sl-color-warning: #f59e0b;
+  --sl-color-warning-hover: #d97706;
+  --sl-color-warning-active: #b45309;
+  
+  /* Danger Colors */
+  --sl-color-danger: #ef4444;
+  --sl-color-danger-hover: #dc2626;
+  --sl-color-danger-active: #b91c1c;
+  
+  /* Neutral Colors */
+  --sl-color-neutral-50: #f9fafb;
+  --sl-color-neutral-100: #f3f4f6;
+  --sl-color-neutral-200: #e5e7eb;
+  --sl-color-neutral-300: #d1d5db;
+  --sl-color-neutral-400: #9ca3af;
+  --sl-color-neutral-500: #6b7280;
+  --sl-color-neutral-600: #4b5563;
+  --sl-color-neutral-700: #374151;
+  --sl-color-neutral-800: #1f2937;
+  --sl-color-neutral-900: #111827;
+  
+  /* Text Colors */
+  --sl-color-text-primary: #111827;
+  --sl-color-text-secondary: #6b7280;
+  --sl-color-text-inverse: #ffffff;
+  
+  /* Background Colors */
+  --sl-color-background: #ffffff;
+  --sl-color-surface: #f9fafb;
+  
+  /* Border Colors */
+  --sl-color-border: #e5e7eb;
+  
+  /* Spacing */
+  --sl-spacing-xs: 0.25rem;
+  --sl-spacing-sm: 0.5rem;
+  --sl-spacing-md: 1rem;
+  --sl-spacing-lg: 1.5rem;
+  --sl-spacing-xl: 2rem;
+  --sl-spacing-2xl: 3rem;
+  
+  /* Border Radius */
+  --sl-border-radius-sm: 0.25rem;
+  --sl-border-radius-md: 0.375rem;
+  --sl-border-radius-lg: 0.5rem;
+  --sl-border-radius-xl: 0.75rem;
+  
+  /* Font Sizes */
+  --sl-font-size-xs: 0.75rem;
+  --sl-font-size-sm: 0.875rem;
+  --sl-font-size-md: 1rem;
+  --sl-font-size-lg: 1.125rem;
+  --sl-font-size-xl: 1.25rem;
+  --sl-font-size-2xl: 1.5rem;
+  
+  /* Font Weights */
+  --sl-font-weight-normal: 400;
+  --sl-font-weight-medium: 500;
+  --sl-font-weight-semibold: 600;
+  --sl-font-weight-bold: 700;
+  
+  /* Line Heights */
+  --sl-line-height-tight: 1.25;
+  --sl-line-height-normal: 1.5;
+  --sl-line-height-relaxed: 1.75;
+  
+  /* Shadows */
+  --sl-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --sl-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --sl-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --sl-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  
+  /* Transitions */
+  --sl-transition-fast: 150ms ease-in-out;
+  --sl-transition-medium: 250ms ease-in-out;
+  --sl-transition-slow: 350ms ease-in-out;
+  
+  /* Focus Ring */
+  --sl-focus-ring: 0 0 0 3px rgba(0, 112, 243, 0.4);
+  --sl-focus-ring-offset: 2px;
+}
+
+/* Dark theme support */
+:host([theme="dark"]) {
+  --sl-color-text-primary: #f9fafb;
+  --sl-color-text-secondary: #d1d5db;
+  --sl-color-text-inverse: #111827;
+  --sl-color-background: #111827;
+  --sl-color-surface: #1f2937;
+  --sl-color-border: #374151;
+}
