@@ -22,7 +22,7 @@ export const config: Config = {
     },
   ],
   testing: {
-    browserHeadless: "shell",
+    browserHeadless: 'new',
     testPathIgnorePatterns: ['/node_modules/', '.e2e.ts'],
   },
 };
