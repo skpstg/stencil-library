@@ -22,10 +22,6 @@ export namespace Components {
     }
     interface SlButton {
         /**
-          * Accessible label for the button (used when content is icon-only)
-         */
-        "ariaLabel"?: string;
-        /**
           * Disables the button
           * @default false
          */
@@ -35,6 +31,10 @@ export namespace Components {
           * @default false
          */
         "fullWidth": boolean;
+        /**
+          * Accessible label for the button (used when content is icon-only)
+         */
+        "label"?: string;
         /**
           * The button's size
           * @default 'medium'
@@ -53,10 +53,6 @@ export namespace Components {
     }
     interface SlCard {
         /**
-          * Accessible label for the card region
-         */
-        "ariaLabel"?: string;
-        /**
           * Adds elevation shadow to the card
           * @default 'md'
          */
@@ -66,6 +62,10 @@ export namespace Components {
           * @default false
          */
         "interactive": boolean;
+        /**
+          * Accessible label for the card region
+         */
+        "label"?: string;
         /**
           * ARIA role for the card
           * @default 'region'
@@ -115,10 +115,6 @@ declare namespace LocalJSX {
     }
     interface SlButton {
         /**
-          * Accessible label for the button (used when content is icon-only)
-         */
-        "ariaLabel"?: string;
-        /**
           * Disables the button
           * @default false
          */
@@ -128,6 +124,10 @@ declare namespace LocalJSX {
           * @default false
          */
         "fullWidth"?: boolean;
+        /**
+          * Accessible label for the button (used when content is icon-only)
+         */
+        "label"?: string;
         /**
           * The button's size
           * @default 'medium'
@@ -146,10 +146,6 @@ declare namespace LocalJSX {
     }
     interface SlCard {
         /**
-          * Accessible label for the card region
-         */
-        "ariaLabel"?: string;
-        /**
           * Adds elevation shadow to the card
           * @default 'md'
          */
@@ -159,6 +155,10 @@ declare namespace LocalJSX {
           * @default false
          */
         "interactive"?: boolean;
+        /**
+          * Accessible label for the card region
+         */
+        "label"?: string;
         /**
           * ARIA role for the card
           * @default 'region'

@@ -9,9 +9,9 @@
 
 | Property      | Attribute     | Description                                    | Type                                     | Default     |
 | ------------- | ------------- | ---------------------------------------------- | ---------------------------------------- | ----------- |
-| `ariaLabel`   | `aria-label`  | Accessible label for the card region           | `string`                                 | `undefined` |
 | `elevation`   | `elevation`   | Adds elevation shadow to the card              | `"lg" \| "md" \| "none" \| "sm" \| "xl"` | `'md'`      |
 | `interactive` | `interactive` | Makes the card interactive (adds hover effect) | `boolean`                                | `false`     |
+| `label`       | `label`       | Accessible label for the card region           | `string`                                 | `undefined` |
 | `role`        | `role`        | ARIA role for the card                         | `string`                                 | `'region'`  |
 
 

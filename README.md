@@ -98,13 +98,14 @@ An accessible button component with multiple variants and sizes.
 - `disabled`: `boolean` (default: `false`)
 - `type`: `'button' | 'submit' | 'reset'` (default: `'button'`)
 - `fullWidth`: `boolean` (default: `false`)
-- `ariaLabel`: `string` (optional)
+- `label`: `string` (optional - accessible label for icon-only buttons)
 
 **Example:**
 ```html
 <sl-button variant="primary" size="large">Large Primary Button</sl-button>
 <sl-button variant="danger" disabled>Disabled Danger Button</sl-button>
 <sl-button full-width>Full Width Button</sl-button>
+<sl-button label="Close">×</sl-button>
 ```
 
 ### Card (`<sl-card>`)
@@ -114,7 +115,7 @@ A flexible card component with header, body, and footer slots.
 **Props:**
 - `elevation`: `'none' | 'sm' | 'md' | 'lg' | 'xl'` (default: `'md'`)
 - `interactive`: `boolean` (default: `false`)
-- `ariaLabel`: `string` (optional)
+- `label`: `string` (optional - accessible label for the card)
 - `role`: `string` (default: `'region'`)
 
 **Slots:**

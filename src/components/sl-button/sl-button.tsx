@@ -37,7 +37,7 @@ export class SlButton {
   /**
    * Accessible label for the button (used when content is icon-only)
    */
-  @Prop() ariaLabel?: string;
+  @Prop() label?: string;
 
   render() {
     return (
@@ -52,7 +52,7 @@ export class SlButton {
             'button--full-width': this.fullWidth,
             'button--disabled': this.disabled,
           }}
-          aria-label={this.ariaLabel}
+          aria-label={this.label}
           aria-disabled={this.disabled ? 'true' : 'false'}
         >
           <slot></slot>

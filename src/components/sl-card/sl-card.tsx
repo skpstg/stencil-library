@@ -24,7 +24,7 @@ export class SlCard {
   /**
    * Accessible label for the card region
    */
-  @Prop() ariaLabel?: string;
+  @Prop() label?: string;
 
   /**
    * ARIA role for the card
@@ -41,7 +41,7 @@ export class SlCard {
             'card--interactive': this.interactive,
           }}
           role={this.role}
-          aria-label={this.ariaLabel}
+          aria-label={this.label}
         >
           <div class="card__header">
             <slot name="header"></slot>

@@ -46,7 +46,7 @@ describe('sl-button', () => {
   it('renders with aria-label', async () => {
     const page = await newSpecPage({
       components: [SlButton],
-      html: `<sl-button aria-label="Close dialog">X</sl-button>`,
+      html: `<sl-button label="Close dialog">X</sl-button>`,
     });
     const button = page.root?.shadowRoot?.querySelector('button');
     expect(button?.getAttribute('aria-label')).toBe('Close dialog');

@@ -34,7 +34,7 @@ describe('sl-card', () => {
   it('renders with aria-label', async () => {
     const page = await newSpecPage({
       components: [SlCard],
-      html: `<sl-card aria-label="Product details">Content</sl-card>`,
+      html: `<sl-card label="Product details">Content</sl-card>`,
     });
     const card = page.root?.shadowRoot?.querySelector('.card');
     expect(card?.getAttribute('aria-label')).toBe('Product details');

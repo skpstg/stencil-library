@@ -1,7 +1,7 @@
 {
   "name": "stencil-components",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "description": "A modern, accessible web component library built with StencilJS",
   "type": "module",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
@@ -18,6 +18,14 @@
       "import": "./dist/components/my-component.js",
       "types": "./dist/components/my-component.d.ts"
     },
+    "./sl-button": {
+      "import": "./dist/components/sl-button.js",
+      "types": "./dist/components/sl-button.d.ts"
+    },
+    "./sl-card": {
+      "import": "./dist/components/sl-card.js",
+      "types": "./dist/components/sl-card.d.ts"
+    },
     "./loader": {
       "import": "./loader/index.js",
       "require": "./loader/index.cjs",
@@ -26,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stenciljs/component-starter.git"
+    "url": "https://github.com/skpstg/stencil-library.git"
   },
   "files": [
     "dist/",
